@@ -1,5 +1,5 @@
 import {Controller} from '@blitzjs/core'
-import {validContent} from '../utils/contentFilter'
+import {validContent} from '../../utils/contentFilter'
 
 export const CommentsController = Controller(({db}) => ({
   name: 'CommentsController',

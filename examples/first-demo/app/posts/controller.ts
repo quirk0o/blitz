@@ -1,5 +1,5 @@
 import {Controller} from '@blitzjs/core'
-import {validContent} from '../utils/contentFilter'
+import {validContent} from '../../utils/contentFilter'
 
 export const PostsController = Controller(({db}) => ({
   name: 'PostsController',
@@ -32,7 +32,7 @@ export const PostsController = Controller(({db}) => ({
 
     const data = await db.post.create({
       data: newData,
-    })
+    } as any)
 
     return {
       data,
